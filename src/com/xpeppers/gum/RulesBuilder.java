@@ -9,6 +9,7 @@ public class RulesBuilder {
 		List<DividerRule> rules = new ArrayList<DividerRule>();
 		rules.add(new DividerRule(2, new AddWordToOutput("Fizz")));
 		rules.add(new DividerRule(3, new AddWordToOutput("Buzz")));
+		rules.add(new DividerRule(13, new AddWordToOutput("Bang")));
 		rules.add(new DividerRule(7, new PatatracAdder()));
 		rules.add(new DividerRule(1, new AddNumberIfOutputIsEmpty(number)));
 		return rules;
