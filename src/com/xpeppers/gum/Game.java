@@ -17,9 +17,8 @@ public class Game {
 
 	public void say(int number) {
 		output.clear();
-		List<DividerRule> rules = rulesBuilder.createRulesList(number);
 		
-		for (DividerRule rule : rules) {
+		for (DividerRule rule : rulesBuilder.createRulesList(number)) {
 			rule.applyRule(number, output);
 		}
 		
